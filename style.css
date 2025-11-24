@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     font-family: "Roboto", sans-serif;
-     font-size: 16px;
-     font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .banner-wrap{
@@ -43,63 +47,87 @@ main{
     margin-top: calc(155px - 56px);
 }
 
-.actions-area{
-    padding-bottom: 100px;
-}
-
 h1{
     font-weight: 600;
     font-size: 40px;
 }
 
-p{
+.header-order{
     font-weight: 600;
     font-size: 14px;
     padding: 6px 24px 16px 24px;
+    color: #1f2228;
+}
+
+.header-order a,
+.header-order a:visited {
+    color: #1f2228;
 }
 
 .nav-item{
     padding: 5px 15px;
     cursor: pointer;
+    transition: all 0.25s ease;
+    display: inline-block;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: #1f2228;
 }
 
 .nav-item:hover{
-    background-color: #d8d9d8;
-    border-bottom-left-radius: 9999px;
-    border-bottom-right-radius: 9999px;
-    border-top-left-radius: 9999px; ;
-    border-top-right-radius: 9999px;
-    
-}
-
-button{
-    margin: 0;
-    padding: 0;
-    border: none;
-    background: none;
-    background-color: yellow;
-    width: 264px;
-    height: 40px;
-    padding: 7px 27px;
-    border-bottom-left-radius: 9999px;
-    border-bottom-right-radius: 9999px;
-    border-top-left-radius: 9999px; ;
-    border-top-right-radius: 9999px;
-    margin-right: 20px;
-    cursor: pointer;
-
+    background-color: rgba(206, 206, 206, 0.4);
+    border-radius: 9999px;
+    transform: scale(1.10);
 }
 
 .middle-menu{
     padding-left: 150px;
 }
 
-.btn-dark{
-    background-color: #191d21;
-    color: white;
+.dark{
+    margin: 0;
+    width: 264px;
+    height: 40px;
+    padding: 12px 27px;
+    border-radius: 9999px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    color: rgba(206, 206, 206,0.7);
+    background-color: #1f2228;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.btn-light{
-    background-color: #e4e4e2;
-    color: #191d21;
+.dark:visited{
+    color: rgb(206, 206, 206)
+}
+
+.light{
+    margin: 0;
+    width: 264px;
+    height: 40px;
+    padding: 12px 27px;
+    border-radius: 9999px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    color: #1f2228;
+    background-color: rgba(206, 206, 206, 0.4);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.light:visited{
+    color: #1f2228 ;
+}
+
+.dark:hover, .light:hover{
+transform: scale(1.03);
+}
+
+.actions-area{
+    padding-bottom: 100px;
 }
