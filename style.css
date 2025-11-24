@@ -2,6 +2,8 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 *{
@@ -20,6 +22,7 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border-bottom: 3px;
 }
 
 nav{
@@ -28,6 +31,12 @@ nav{
     height: 56px;
     align-items: center;
     padding: 0 32px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    backdrop-filter: blur(4px);
 }
 
 .logo{
@@ -95,7 +104,7 @@ h1{
     margin-right: 20px;
     cursor: pointer;
     transition: all 0.25s ease;
-    color: rgba(206, 206, 206,0.7);
+    color: rgb(206, 206, 206);
     background-color: #1f2228;
     text-decoration: none;
     display: inline-block;
@@ -130,4 +139,198 @@ transform: scale(1.03);
 
 .actions-area{
     padding-bottom: 100px;
+}
+
+.models{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.car-section-left{
+    position: relative;
+    display: flex;
+    margin-top: 120px;
+}
+
+.car-section-left img{
+    width: 55%;
+    height: auto;
+    margin-left: 50px;
+    border-radius: 15px;
+}
+
+.car-section-left .img-text{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    color: white;
+    font-weight: 600;
+    font-size: 64px;
+}
+
+.car-section-left .car-description{
+    width: 650px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.car-description h1{
+margin-bottom: 15px;
+font-size: 58px;
+}
+
+.car-description li{
+    margin-bottom: 14px;
+    font-size: 20px;
+}
+
+.car-section-right{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.car-section-right img{
+    width: 55%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.car-section-right .img-text{
+    position: absolute;
+    color: white;
+    font-size: 64px;
+    font-weight: 600;
+    top: 70%;
+    right: 10%;
+}
+
+.car-section-right .car-description{
+    width: 650px;
+    margin-right: 60px;
+    margin-top: 10px;
+}
+
+.car-section-right li{
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.car-section-right h1{
+    font-size: 58px;
+    margin-bottom: 15px;
+}
+
+.solar{
+    margin-bottom: 80px;
+}
+
+.solar-img{
+    display: flex;
+    gap: 80px;
+    margin-left: 110px;
+    position: relative;
+}
+
+.solar-img img{
+    width: 800px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.solar-roof-text{
+    position: absolute;
+    top: 66%;
+    left: 3%;
+    font-size: 64px;
+    color: white;
+}
+
+.solar-panels-text{
+    position: absolute;
+    color: white;
+    font-size: 64px;
+    right: 52%;
+    top: 66%;
+}
+
+.solar-item a{
+    width: 200px;
+    height: 40px;
+    padding: 12px 54px;
+    border-radius: 9999px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    color: rgb(206, 206, 206);
+    background-color: rgba(17, 19, 22, 0.8);
+    text-decoration: none;
+    display: inline-block;
+    justify-content: center;
+    position: absolute;
+    top: 82%;
+}
+
+.solar-item a:hover{
+    transform: scale(1.03);
+    background-color: rgba(12, 14, 17, 0.9);
+}
+
+.solar-item{
+    position: relative;
+}
+
+.solar-left{
+    left: 3%;
+}
+
+.solar-right{
+    right: 69%;
+}
+
+
+
+.footer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul{
+    display: flex;
+    gap: 24px;
+}
+
+.footer li{
+    list-style-type: none;
+    display: inline-block;
+    transition: all 0.25s ease;
+}
+
+.footer li:hover{
+    transform: scale(1.15);
+    display: inline-block;
+}
+
+
+
+.footer a{
+    display: inline-block;
+    color: rgb(107, 107, 107);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer a:visited{
+    color: rgb(107, 107, 107);
+    text-decoration: none;
+}
+
+.footer a:hover{
+    display: inline-block;
 }
