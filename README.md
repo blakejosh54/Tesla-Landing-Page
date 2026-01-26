@@ -1,4 +1,4 @@
-Tesla Landing Page Replica
+# Tesla Landing Page Replica
 
 A replica of the Tesla landing page built to practice modern layouts, spacing, and visual hierarchy.
 
